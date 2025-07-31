@@ -3,7 +3,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 # خواندن فایل CSV خروجی از تحلیل قبلی
-df = pd.read_csv("C:/Users/amiii/BA/istat_data/disoccupazione_completa.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/amirmohammadnajafi/istat_analiz/main/disoccupazione_completa.csv")
 
 # تبدیل نرخ بیکاری به عدد (از درصد به float)
 df["Tasso di Disoccupazione (%)"] = df["Tasso di Disoccupazione"].str.replace('%', '').astype(float)
